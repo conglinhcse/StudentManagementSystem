@@ -1,0 +1,124 @@
+
+body {
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.navcolumn {
+  float: left;
+  width: 33.33%;
+  height: 100px;
+  
+  /* Should be removed. Only for demonstration */
+}
+
+.navcontainer {
+  text-align: center;
+  }
+
+/* .col-30 {
+    float: left;
+    width: 30%;
+    height: 100px;
+    padding: 30px 20px;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    height: 100px;
+    padding: 30px 10px;
+} */
+
+/* Clear floats after the columns */
+.navrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.search {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.txt {
+    width: 80%; 
+    text-align: center;
+    /* font-size: 30px; */
+    display: inline-block;
+}
+
+/* input[type=text] {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+} */
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .navcolumn {
+    width: 100%;
+  }
+} */
+
+
+.formsearch { 
+  float: center;
+  padding: 0px 0px;
+  text-align: center;
+  
+}
+
+.searchbutton {
+  /* border: 1px solid rgb(238, 16, 16); */
+  
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.7;
+  display: inline;
+  width: 20%;
+  background-color: Crimson;
+}
+
+.searchbutton:active {
+  background-color: #58257b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  outline: none;
+}
+.searchbutton :hover {
+  /* background-color:  rgb(76, 154, 228); */
+  opacity: 1;
+}
+
+.searchbutton button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 501px) and (max-width: 720px) {
+  .searchbutton {
+    width: 20%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navcolumn, .searchbutton {
+    width: 100%;
+    font-size: 15px;
+  } 
+}
+

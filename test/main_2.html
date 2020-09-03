@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="main_2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Main Form</title>
+
+    <script>
+
+
+        var loadFile = function (event) {
+
+
+            var image = document.getElementById('img');
+            console.log(URL.createObjectURL(event.target.files[0]));
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+
+    <script>
+        function encodeImageFileAsURL(element) {
+            var file = element.files[0];
+            var reader = new FileReader();
+            var image = document.getElementById('img');
+            reader.onloadend = function () {
+                console.log('RESULT', reader.result);
+                image.src = reader.result;
+            }
+            reader.readAsDataURL(file);
+
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- <input id="inp" type='file'>
+    <p id="b64"></p>
+    <img id="img" height="150"> -->
+
+    <input id="inp" type='file' onchange="encodeImageFileAsURL(this)">
+    <p id="b64"></p>
+    <img id="img" height="150" alt="avatar">
+
+</body>
+
+</html>

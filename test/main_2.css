@@ -1,0 +1,508 @@
+
+body, html {
+    height: 100%;
+    font-family: sans-serif, Arial, Helvetica;
+    color: #333;
+    /* background-image: url(http://thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-hinh-anh-ve-vu-tru-cuc-dep_101311485.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+
+.header {
+    /* background-image: url(http://thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-hinh-anh-ve-vu-tru-cuc-dep_101311485.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    height: 50%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Avatar */
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+  color: rgb(202, 189, 189);
+}
+
+.title {
+  color: rgb(221, 211, 211);
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(77, 164, 240);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(77, 164, 240);
+  margin: 0px 5px;
+}
+
+.card button:hover, a:hover {
+  opacity: 0.7;
+}
+/* End Avatar */
+
+/* Dropdown */
+.dropbtn {
+  background-color: #444744;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+  width: 90px;
+  border: 1 solid black;
+  /* float: right; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {opacity: 0.7;}
+
+/* End Dropdown */
+
+/* Uni Info */
+.Uniinfo {
+  margin: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(202, 189, 189);
+  text-align: center;
+}
+/* End Uni Info */
+
+/* Search */
+.nav {
+    color: white;
+}
+
+.nav ul {
+    /* background: #1F568B; */
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav li {
+    /* width: 33.33%; */
+    color: #f1f1f1;
+    display: inline-block;
+    margin: 20px 40px;
+  }
+
+.search {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    /* background: #f1f1f1; */
+  }
+
+.email input::-webkit-outer-spin-button,
+.email input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* .search label {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: black;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  } */
+  
+.label_ {
+    margin: 0px 10px;
+    font-size: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+  .searchbutton button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    /* background: #2196F3; */
+    color: black;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-left: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 20px 620px;
+    /* margin-left: 60%; */
+    opacity: 0.7;
+
+  }
+  
+  .searchbutton button:hover {
+    background-color:  rgb(76, 154, 228);
+    opacity: 1;
+  }
+
+  .searchbutton button:focus {
+    outline: none;
+  }
+  
+  .search input[type=text]::after, .search input[type=date]::after, .search input[type=mail]::after, .search input[type=tel]::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media screen and (max-width: 400px) {
+    .search {
+      float: none;
+    }
+    .search input[type=text], .search input[type=date], .search input[type=mail], .search input[type=tel], .search button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    form.search input[type=text], form.search input[type=date], form.search input[type=mail], form.search input[type=tel] {
+      border: 1px solid #ccc;  
+    }
+  }
+
+/* End Search */
+
+/* Dropdown */
+.dropbtn {
+  background-color: #444744;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+  width: 90px;
+  border: 1 solid black;
+  /* float: right; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {opacity: 0.7;}
+
+/* End Dropdown */
+
+
+.main {
+  color: white;
+  border:3px solid #e2e9e2;
+  float: center;
+  width:97%;
+  height:50%;
+  overflow-x:auto;
+  overflow-y:auto;
+  margin-left: 1.5%;
+}
+
+
+/* Table */
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-color: white;
+  color: white;
+}
+
+
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+
+tr:hover , tr button:hover{
+  opacity: 1;
+  color: black;
+  background-color: rgb(76, 154, 228);
+}
+
+tr:focus , tr button:focus{
+  outline: none;
+}
+
+
+.submit {
+  font-size: 15px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 70px;
+  opacity: 0.3;
+}
+
+.submit:hover {
+  background: red;
+  opacity: 1;
+}
+
+.submit:focus {
+  outline: none;
+}
+/* End table */
+
+/* Create */
+.create {
+  color: black;
+  float: right;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  font-size: large;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.create:hover {
+  background: rgb(76, 154, 228);
+  opacity: 1;
+}
+
+.create:focus {
+  outline: none;
+}
+/* End Create */
+
+/* Footer */
+.footer {
+  color: white;
+  float: left;
+  width: 100%;
+  font-family: monospace;
+  font-size: 30px ;
+  text-align: center;
+  margin-top: 20px;
+  position: sticky;
+  background: #121b24;
+  padding: 2px;
+  top: 100%;
+}
+
+/* End Footer */
+
+
+/* Modal */
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: rgb(98, 219, 228);
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: rgb(98, 219, 228);
+}
+
+.cancelbtn:hover, .deletebtn:hover {
+  opacity: 0.7;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right: 0;
+  top: 0;
+  text-align: center;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: #95f378; */
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #83f392;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+
+
+/* ######################################################################################## */
+
+.r {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 30px 0px;
+}
+
+.c {
+  float: left;
+  width: 33.33%;
+  padding: 10;
+  height: 300px;
+  float: center;
+}
+
+/* #id1 {
+  background-color: #83f392;
+  height: 100px;
+} */

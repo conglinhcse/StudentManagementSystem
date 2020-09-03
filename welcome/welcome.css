@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/336/163/715/honeycombs-abstract-minimalism-simple-background-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .container {
+      height: 400px;
+      margin: 87px 300px;
+      border: 2px solid rgb(73, 70, 70);
+      padding: 10px;
+      background-color: rgb(195, 229, 248);
+      opacity: 1;
+  }
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+h1, .p1, .p2 {
+  color: rgb(11, 69, 117);
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+h1 {
+  padding: 10px 20px;
+  font-size: 80px;
+}
+
+.p1 {
+  padding: 10px 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.p2 {
+  padding: 0px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+button {
+  background-color: rgb(19, 99, 204);
+  color: white;
+    padding: 10px 20px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-top: 30px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    opacity:1;
+  }
+
+  /* Extra styles for the cancel button */
+.signinbtn {
+  background-color: black;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .signinbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+
+  /* button[type=submit], button[type=button] {
+      width: 50%;
+  } */
+
+
+    /* Footer */
+.footer {
+  color: white;
+  float: left;
+  width: 100%;
+  font-family: monospace;
+  font-size: 30px ;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+
+  bottom: 0;
+  background: #121b24;
+  padding: 2px;
+
+  opacity: 0.7;
+
+  /* position: fixed; */
+  left: 0;
+}
+
+/* End Footer */
+
+  @media screen and (max-width: 1300px) {
+    h1 {
+      font-size: 50px;
+    }
+
+    .p2 {
+      margin-bottom: 20px;
+    }
+    .container {
+      margin: 10px 100px;
+    }
+    .footer {
+      position: sticky;
+      top: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+    .p1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .p2 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .container {
+      margin: 10px 100px;
+      height: 300px;
+    }
+    .footer {
+      font-size: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      font-size: 15px;
+      padding: 5px 10px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .p2, .p1 {
+      margin: 5px 0px;
+    }
+    .container {
+      margin: 10px 0px;
+      height: 300px;
+    }
+    .footer {
+      font-size: 15px;
+    }
+    .signinbtn, .signupbtn {
+      width: 100%;
+    }
+    button {
+      font-size: 15px;
+      margin: 5px 0px;
+    }
+  }
+
+  @media screen and (max-width: 280px) {
+    .container {
+      height: 350px;
+    }  
+  }
+
+  /* @media screen and (max-width: 1000px) {
+    h1 {
+      font-size: 30px;
+    }
+  } */

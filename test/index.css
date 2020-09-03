@@ -1,0 +1,224 @@
+/* .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+ */
+
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    /* background: #f1f1f1; */
+
+    background-image: url(http://thuthuatphanmem.vn/uploads/2018/05/23/wallpaper-4k-hinh-nen-4k-hinh-anh-ve-vu-tru-cuc-dep_101311485.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 20px;
+    text-align: center;
+    /* background: white; */
+
+  }
+
+  .header a {
+    float:right;
+    padding: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .header a:hover {
+    background-color: rgb(72, 81, 206);
+    color: black;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .hotline {
+    overflow: hidden;
+    /* background-color: white; */
+  }
+  
+  /* Style the hotline links */
+  .hotline p {
+    width: 25%;
+    margin: 0px;
+    float: left;
+    display: block;
+    color: azure;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+  }
+  
+  .hotline p:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+
+
+  
+
+  /* Style the top navigation bar */
+  .topnav {
+    /* overflow: hidden; */
+    background-color: white;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    width: 25%;
+    margin-top: 0px;
+    float: left;
+    display: block;
+    color:  rgb(158, 150, 150);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgb(48, 44, 44);
+    color: white;
+  }
+  
+  
+
+  form.search input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    /* background: #f1f1f1; */
+  }
+  
+  form.search button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    /* background: #2196F3; */
+    color: black;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.search button:hover {
+    background: rgb(48, 44, 44);
+  }
+  
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 74%;
+    margin-top: 0px;
+  }
+  
+  /* Middle column */
+  .midcolumn {
+    float: left;
+    width: 1%;
+    margin-top: 0px;
+  }
+
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    /* background-color: #f1f1f1; */
+    padding-left: 20px;
+    margin-top: 0px;
+
+    /* margin-left: 5px;
+    margin-right: 0px; */
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    /* background-color: white; */
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 0px;
+    text-align: center;
+    /* background: #ddd; */
+    margin-top: 20px;
+    color: aliceblue; 
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    form.search {
+      float: none;
+    }
+    form.search input[type=text], .search button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    form.search input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
